@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: rgb(0, 153, 153)}
+h1   {text-align: center;}
+p    {text-align: center;}
+</style>
+<title>Colin's Site</title>
+<script>
+var when = 0;
+function aFunction(strt) {
+  if (strt == 1){
+	when += 1;
+	strt = 0;
+	if (when == 1){
+	document.getElementById("oOo").innerHTML = "Hello";
+	}
+	else if (when == 2){
+		document.getElementById("oOo").innerHTML = "Hows it going";
+	}
+	else if (when == 3){
+		document.getElementById("oOo").innerHTML = "Cool well have a good day";
+	}
+	else if (when == 30){
+		document.getElementById("oOo").innerHTML = "Stop pushing me";
+	}
+	else if (when >= 40){
+		document.getElementById("oOo").innerHTML = "You know what here you go";
+		document.getElementById("push").innerHTML = "Times pushed " + when;
+	}
+	
+  }
+  
+  }
+</script>
+</head>
+<body>
+<h1>I made this just cause why not</h1>
+<p>Going to put stuff on here I guess</p>
+<p><br><br><br><br></p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0UqOCviP33I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe></center>
+<center><p>Thank you maddie</p></center>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<center><button type="button" id="oOo" onclick="aFunction(1)">oOo</button></center>
+<p id="push"></p>
+</body>
+</html>
